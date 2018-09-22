@@ -6,6 +6,7 @@
 4、单例设计模式7种：1. 饿汉模式,2. 懒汉模式（线程不安全）,3. 懒汉模式（线程安全）  
                  4. 双重检查模式 （DCL）,5. 静态内部类单例模式,6. 枚举单例,  
                  7. 使用容器实现单例模式：  
+                 
                  public class SingletonManager {  
                  　　private static Map<String, Object> objMap = new HashMap<String,Object>();
                  　　private Singleton() { 
@@ -18,7 +19,8 @@
                  　　public static ObjectgetService(String key) {
                  　　　　return objMap.get(key) ;
                  　　}
-                 }
+                 }  
+                 
                  用SingletonManager 将多种的单例类统一管理，在使用时根据key获取对象对应类型的对象。  
                  这种方式使得我们可以管理多种类型的单例，并且在使用时可以通过统一的接口进行获取操作，  
                  降低了用户的使用成本，也对用户隐藏了具体实现，降低了耦合度
