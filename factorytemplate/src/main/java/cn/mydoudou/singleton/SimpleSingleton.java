@@ -2,7 +2,7 @@ package cn.mydoudou.singleton;
 
 /**
  * @author fut
- * @description 简单单例模式，线程不安全的
+ * @description 简单单例模式，线程不安全的，懒汉模式
  * @create 2018-09-22
  * @wiki
  */

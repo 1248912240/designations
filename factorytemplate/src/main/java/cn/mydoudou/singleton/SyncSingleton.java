@@ -2,7 +2,8 @@ package cn.mydoudou.singleton;
 
 /**
  * @author fut
- * @description 简单单例模式，线程安全，每次调用getInstance()，都要对对象上锁，效率极低
+ * @description 懒汉模式（线程安全）
+ * 但是每次调用getInstance()，都要对对象上锁,造成不必要的同步开销，效率极低
  * @create 2018-09-22
  * @wiki
  */
