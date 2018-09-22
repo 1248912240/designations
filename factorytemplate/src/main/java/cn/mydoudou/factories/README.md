@@ -1,4 +1,4 @@
-#### 第一种简单工厂
+#### 第一种 简单工厂
     public Sender produce(String type) {
             if ("mail".equals(type)) {
                 return new MailSender();
@@ -10,7 +10,7 @@
             }
         }
     
-#### 第二种,多工厂方法
+#### 第二种 多工厂方法
 
     public class SendFactory {
         
